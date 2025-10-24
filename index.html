@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel González - Desarrollador Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">MG</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-blue-400 transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="hover:text-blue-400 transition-colors">Sobre Mí</a>
+                    <a href="#proyectos" class="hover:text-blue-400 transition-colors">Proyectos</a>
+                    <a href="#contacto" class="hover:text-blue-400 transition-colors">Contacto</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-purple-600/20 to-pink-600/30"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="animate-fade-in">
+                <div class="mb-8">
+                    <div class="inline-block p-4 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/30 mb-6">
+                        <i class="fas fa-code text-4xl text-blue-400"></i>
+                    </div>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+                    Hola, soy <span class="gradient-text-enhanced">Manuel González</span>
+                </h1>
+                <p class="text-2xl md:text-3xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-400">
+                    Desarrollador Web & Freelancer
+                </p>
+                <p class="text-xl mb-12 max-w-3xl mx-auto text-gray-300 leading-relaxed">
+                    Transformo ideas en experiencias digitales excepcionales. 
+                    Especializado en desarrollo full-stack y soluciones innovadoras.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="#proyectos" class="btn-primary-enhanced">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Ver Proyectos
+                    </a>
+                    <a href="#contacto" class="btn-secondary-enhanced">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Contactar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes-enhanced">
+            <div class="shape-enhanced shape-1"></div>
+            <div class="shape-enhanced shape-2"></div>
+            <div class="shape-enhanced shape-3"></div>
+            <div class="shape-enhanced shape-4"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Sobre Mí</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Desarrollador Apasionado</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Soy un desarrollador web con experiencia en crear aplicaciones modernas y funcionales. 
+                        Me especializo en tecnologías frontend y backend, siempre buscando las mejores 
+                        prácticas y soluciones innovadoras.
+                    </p>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Como freelancer, he trabajado con diversos clientes ayudándoles a materializar 
+                        sus ideas en productos digitales de alta calidad.
+                    </p>
+                    
+                    <!-- Lenguajes de Programación -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-4 text-blue-400">Lenguajes</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <div class="tech-item">
+                                <i class="fab fa-js-square text-yellow-400"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js-square text-blue-400"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-python text-green-400"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-code text-blue-300"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-php text-purple-500"></i>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Frameworks -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-4 text-purple-400">Frameworks</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <div class="tech-item">
+                                <i class="fab fa-react text-cyan-400"></i>
+                                <span>React / React Native</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js text-green-500"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-python text-green-600"></i>
+                                <span>Django</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-server text-gray-400"></i>
+                                <span>Express</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Herramientas y Bases de Datos -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-orange-400">Herramientas & DB</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <div class="tech-item">
+                                <i class="fas fa-database text-green-400"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-layer-group text-blue-500"></i>
+                                <span>Prisma</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-git-alt text-red-500"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-docker text-blue-600"></i>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="profile-visual">
+                        <div class="profile-circle">
+                            <div class="profile-inner">
+                                <i class="fas fa-laptop-code text-6xl text-white"></i>
+                            </div>
+                            <div class="profile-ring"></div>
+                            <div class="profile-dots">
+                                <div class="dot dot-1"></div>
+                                <div class="dot dot-2"></div>
+                                <div class="dot dot-3"></div>
+                                <div class="dot dot-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Mis Proyectos</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+
+                <!-- Proyecto 1 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt text-4xl text-orange-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">ManejApp</h3>
+                        <p class="text-gray-400 mb-4">
+                            App móvil para autoescuela desarrollada como freelancer. Gestión completa de alumnos y clases.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://manejapp.app/" target="_blank" class="text-blue-400 hover:text-blue-300">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <i class="fas fa-seedling text-4xl text-green-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">Flora Core</h3>
+                        <p class="text-gray-400 mb-4">
+                            Invernadero inteligente automatizado con IA para detección de enfermedades en plantas.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/thiagoHerrera/invernadero" target="_blank" class="text-blue-400 hover:text-blue-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://floracore.onrender.com" target="_blank" class="text-blue-400 hover:text-blue-300">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart text-4xl text-blue-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3">E-Commerce App</h3>
+                        <p class="text-gray-400 mb-4">
+                            Aplicación de comercio electrónico completa con carrito de compras y pagos.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-blue-400 hover:text-blue-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer con Contacto -->
+    <footer id="contacto" class="relative bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 border-t border-gray-700/50 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%)] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(236,72,153,0.1),transparent_50%)] pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 py-20 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <div class="inline-block p-4 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-500/30 mb-6">
+                        <i class="fas fa-paper-plane text-3xl text-blue-400"></i>
+                    </div>
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6 gradient-text-enhanced">Contacto</h2>
+                    <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                        ¿Listo para crear algo increíble juntos? Contáctame y hagamos realidad tu proyecto.
+                    </p>
+                </div>
+                
+                <div class="max-w-2xl mx-auto mb-16">
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-header">
+                                <h3 class="form-title">Envíame un mensaje</h3>
+                                <p class="form-subtitle">Completa el formulario y te responderé pronto</p>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        <input type="text" id="name" name="name" class="styled-input" placeholder=" " required>
+                                        <label for="name" class="floating-label">Nombre completo</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" class="styled-input" placeholder=" " required>
+                                        <label for="email" class="floating-label">Correo electrónico</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-tag input-icon"></i>
+                                    <select id="subject" name="subject" class="styled-input styled-select" required>
+                                        <option value="">Selecciona un tema</option>
+                                        <option value="proyecto">Nuevo Proyecto</option>
+                                        <option value="colaboracion">Colaboración</option>
+                                        <option value="consulta">Consulta General</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                    <label for="subject" class="floating-label">Asunto</label>
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fas fa-comment input-icon"></i>
+                                    <textarea id="message" name="message" rows="4" class="styled-input styled-textarea" placeholder=" " required></textarea>
+                                    <label for="message" class="floating-label">Mensaje</label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                <span class="button-content">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Enviar Mensaje</span>
+                                </span>
+                                <div class="button-bg"></div>
+                            </button>
+                            
+                            <div id="form-status" class="form-status hidden"></div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                    <div class="contact-hero-card lg:col-span-3">
+                        <div class="text-center">
+                            <h3 class="text-3xl font-bold mb-4 gradient-text">¡Conectemos!</h3>
+                            <p class="text-gray-300 mb-8 leading-relaxed text-lg max-w-2xl mx-auto">
+                                Transformo ideas en experiencias digitales excepcionales. 
+                                Desde aplicaciones web hasta soluciones móviles innovadoras.
+                            </p>
+                            <div class="flex items-center justify-center gap-4 text-blue-400">
+                                <i class="fas fa-rocket text-2xl"></i>
+                                <span class="font-semibold">Respuesta en menos de 24 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-enhanced">
+                        <div class="contact-icon-enhanced">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4 class="contact-title">Email</h4>
+                            <a href="mailto:manuel.gonzalez@email.com" class="contact-link">
+                                manuel.gonzalez@email.com
+                            </a>
+                            <p class="contact-desc">Respuesta rápida garantizada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-enhanced">
+                        <div class="contact-icon-enhanced">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4 class="contact-title">Teléfono</h4>
+                            <a href="tel:+15551234567" class="contact-link">
+                                +1 (555) 123-4567
+                            </a>
+                            <p class="contact-desc">Llamadas y WhatsApp</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item-enhanced">
+                        <div class="contact-icon-enhanced">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4 class="contact-title">Ubicación</h4>
+                            <span class="contact-link">Buenos Aires, Argentina</span>
+                            <p class="contact-desc">Trabajo remoto disponible</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <h4 class="text-2xl font-bold mb-6 text-white">Conectemos en Redes</h4>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://www.linkedin.com/in/manuel-adan-gonz%C3%A1lez-b55737340/" target="_blank" class="social-link-enhanced">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Manu-Gonzalez" target="_blank" class="social-link-enhanced">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://instagram.com/manu._.gzz" target="_blank" class="social-link-enhanced">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-800 pt-8 text-center">
+                    <p class="text-gray-400">
+                        © 2024 Manuel González. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
